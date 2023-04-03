@@ -5,7 +5,6 @@ Console.WriteLine("Pętle");
 Console.WriteLine("Warunki");
 Console.WriteLine("Tablice");
 Console.WriteLine("Listy");
-Console.WriteLine("Pętle");
 Console.WriteLine("Słowniki");
 Console.WriteLine("Inne kolekcje jak stos, kolejka");
 Console.WriteLine("Modyfikatory dostępu");
