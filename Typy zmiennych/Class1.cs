@@ -77,7 +77,13 @@ namespace Typy_zmiennych
             const int stala = 10;
 
             Console.Write("Stała Const");
-            Console.Write("\nJeśli chcemy, aby przez cały program wartość pewnej zmiennej nigdy się nie zmieniała to deklarujemy \nprzed jej typem const\nPrzykład zastosowania: const int stala = 10;");
+            Console.Write("\nJeśli chcemy, aby przez cały program wartość pewnej zmiennej nigdy się nie zmieniała to deklarujemy \nprzed jej typem const\nPrzykład zastosowania: const int stala = 10;\n");
+
+
+            //Zmienna inteligentna
+            Console.Write("\nZmienna Var");
+            Console.Write("\nUżywanie var przy deklaracji pomaga dostosować się do zmiennej. Program sam wyczytuje jakim typem zmiennej \njest konkretnie zdefiniowana dana zmienna.");
+
             Console.ReadKey();
         }
     }
