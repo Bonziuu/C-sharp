@@ -79,9 +79,10 @@ namespace Operatory
 
             Console.WriteLine("\n-------------------------------------------\nOperatory logiczne\n\n>= - Większy równy\n<= - Mniejszy równy\n== - Równy (porównywanie zmiennych)");
             Console.WriteLine("!  - Negacja np !(1 == 1) = false, mimo że (1 == 1) = true\n!= - Różny");
-            
+            Console.WriteLine("\n&& - AND, czyli 'i' (koniunkcja)\n|| - OR, czyli 'lub' (alternatywa)\nKolejność wykonywania działań kiedy połączymy || i && w jednym warunku:\nnajpierw wykonujemy działanie logiczne związane ze znakiem && a dopiero później ||\nmożna to przyrównać do kolejności wykonywania działan w matematyce, gdzie \n|| jest jak dodawanie i odejmowanie, a \n&& jest jak mnożenie i dzielenie.\nW tych operacjach można stawiać nawiasy.");
 
-
+            //Math
+            Console.WriteLine("\n-------------------------------------------\nOperacje matematyczne\n\nWykorzystując bibliotekę Math można policzyc bardziej skomplikowane równania np:\nMath.Pow(2,3) = " + Math.Pow(2, 3) + " - potęgowanie liczby 2 do potęgi 3");
             Console.ReadKey();
         }
     }
