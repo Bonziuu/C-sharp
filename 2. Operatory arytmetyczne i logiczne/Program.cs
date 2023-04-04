@@ -61,8 +61,14 @@ namespace Operatory
             b1 %= a1;
             Console.WriteLine("\n\"B1 %= A1\"\nA1 = " + a1 + "\nB1 = " + b1);
 
-
-
+            //Inkrementacja
+            
+            int a2 = 1;
+            Console.WriteLine("\n-------------------------------------------\nInkrementacja\n\nJest to zwiększanie wartości zmiennej o 1. A2=" + a2);
+            a2 += 1;
+            Console.WriteLine("\nZwiększenie tej zmiennej o 1 można zapisać jako A2+=1; A2=" + a2);
+            a2++;
+            Console.WriteLine("\nPowszechnie inkrementację zapisuje się jako po prostu A2++; A2=" + a2);
 
 
 
