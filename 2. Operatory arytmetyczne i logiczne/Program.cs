@@ -77,10 +77,9 @@ namespace Operatory
 
             //Operatory logiczne
 
-            Console.WriteLine("\n-------------------------------------------\nOperatory logiczne\n\n>= - Większy równy\n<= - Mniejszy równy");
-
-
-
+            Console.WriteLine("\n-------------------------------------------\nOperatory logiczne\n\n>= - Większy równy\n<= - Mniejszy równy\n== - Równy (porównywanie zmiennych)");
+            Console.WriteLine("!  - Negacja np !(1 == 1) = false, mimo że (1 == 1) = true\n!= - Różny");
+            
 
 
             Console.ReadKey();
