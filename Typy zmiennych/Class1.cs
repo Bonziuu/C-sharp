@@ -62,8 +62,15 @@ namespace Typy_zmiennych
             char znak = 'B';
 
             Console.WriteLine("String\nZmienna tekstowa\nPrzykład zastosowania: string konrad = \"Mistrz świata\";\nPrzykład użycia: Console.WriteLine(konrad);\nPrzykład rozwiązania: Mistrz świata");
-            Console.WriteLine("\nChar\nZmienna tekstowa, która przechowuje tylko jeden znak!\nPrzykład zastosowania: char znak = 'B';;\nPrzykład użycia: Console.WriteLine(znak);\nPrzykład rozwiązania: B");
-            
+            Console.WriteLine("\nChar\nZmienna tekstowa, która przechowuje tylko jeden znak!\nPrzykład zastosowania: char znak = 'B';\nPrzykład użycia: Console.WriteLine(znak);\nPrzykład rozwiązania: B");
+            Console.Write("\n------------------------------------------------------------------------------\n");
+
+            //Zmienne typu logicznego
+            bool zmiennalogiczna = false;
+            bool zmiennalogiczna2 = true;
+            bool zmiennalogiczna3 = 5 > 2;
+
+            Console.WriteLine("Bool\nZmienna typu logicznego\nPrzyjmuje wartości True lub False (prawda lub fałsz)\nMoże także sprawdzać prawdziwość argumentów\nPrzykład zastosowania: bool zmiennalogiczna3 = 5 > 2;\nPrzykład użycia: Console.WriteLine(zmiennalogiczna3);\nPrzykład rozwiązania: 5\nTrue");
             Console.ReadKey();
         }
     }
