@@ -40,7 +40,7 @@ namespace Operatory
             g = a % b;
             Console.WriteLine("G = A % B = " + g + " - reszta z dzielenia");
 
-            //Nadpisanie nowej wartości zmiennej a1
+            //Nadpisanie nowej wartości zmiennej intiger a1
             Console.WriteLine("\n-------------------------------------------\nNadpisanie nowej wartości zmiennej A1:");
             int a1 = 5;
             int b1 = 8;

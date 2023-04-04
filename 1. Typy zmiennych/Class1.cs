@@ -11,11 +11,11 @@ namespace Typy_zmiennych
         static void Main(string[] args)
         {
             //Liczby całkowite
-            int maxintiger = int.MaxValue;
-            int minintiger = int.MinValue;
+            int maxinteger = int.MaxValue;
+            int mininteger = int.MinValue;
             int sprawdzenie;
 
-            sprawdzenie = maxintiger + minintiger;
+            sprawdzenie = maxinteger + mininteger;
 
             byte minbajt = byte.MinValue;
             byte maxbajt = byte.MaxValue;
@@ -33,7 +33,7 @@ namespace Typy_zmiennych
             uint minuintiger = uint.MinValue;
 
             Console.WriteLine("Typy zmiennych\n");
-            Console.WriteLine("Int\nLiczby całkowite\nZmienna typu int może przyjmować wartość od " + minintiger + " do " + maxintiger);
+            Console.WriteLine("Int\nLiczby całkowite\nZmienna typu int może przyjmować wartość od " + mininteger + " do " + maxinteger);
             Console.WriteLine("\nByte\nLiczby całkowite\nZmienna typu byte może przyjmować wartość od " + minbajt + " do " + maxbajt);
             Console.WriteLine("\nSbyte\nLiczby całkowite\nZmienna typu sbyte może przyjmować wartość od " + minsbajt + " do " + maxsbajt);
             Console.WriteLine("\nShort\nLiczby całkowite\nZmienna typu short może przyjmować wartość od " + minshort + " do " + maxshort);
