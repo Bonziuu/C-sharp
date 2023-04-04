@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kurs 0", "Kurs 0\Kurs 0.csproj", "{94EAAB5B-748C-45F1-B128-091B545F602A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0. Kurs 0", "Kurs 0\0. Kurs 0.csproj", "{94EAAB5B-748C-45F1-B128-091B545F602A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Typy zmiennych", "Typy zmiennych\Typy zmiennych.csproj", "{0B9E7116-74E0-48F6-8744-A59C980384E0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Typy zmiennych", "Typy zmiennych\1. Typy zmiennych.csproj", "{0B9E7116-74E0-48F6-8744-A59C980384E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
