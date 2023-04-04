@@ -70,11 +70,14 @@ namespace Operatory
             a2++;
             Console.WriteLine("\nPowszechnie inkrementację zapisuje się jako po prostu A2++; A2=" + a2);
 
+            //Inkrementacja
 
+            a2--;
+            Console.WriteLine("\n\nDekrementacja A2--; A2=" + a2);
 
+            //Operatory logiczne
 
-
-
+            Console.WriteLine("\n-------------------------------------------\nOperatory logiczne\n\n>= - Większy równy\n<= - Mniejszy równy");
 
 
 
