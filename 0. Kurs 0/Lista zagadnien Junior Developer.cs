@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Typy zmiennych");
+Console.WriteLine("Typy zmiennych\nOperatory arytmetyczne i logiczne");
 Console.WriteLine("Typy wartościowe i referencyjne");
 Console.WriteLine("Pętle");
 Console.WriteLine("Warunki");
