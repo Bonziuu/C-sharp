@@ -71,6 +71,13 @@ namespace Typy_zmiennych
             bool zmiennalogiczna3 = 5 > 2;
 
             Console.WriteLine("Bool\nZmienna typu logicznego\nPrzyjmuje wartości True lub False (prawda lub fałsz)\nMoże także sprawdzać prawdziwość argumentów\nPrzykład zastosowania: bool zmiennalogiczna3 = 5 > 2;\nPrzykład użycia: Console.WriteLine(zmiennalogiczna3);\nPrzykład rozwiązania: 5\nTrue");
+            Console.Write("\n------------------------------------------------------------------------------\n");
+
+            //Stała Const
+            const int stala = 10;
+
+            Console.Write("Stała Const");
+            Console.Write("\nJeśli chcemy, aby przez cały program wartość pewnej zmiennej nigdy się nie zmieniała to deklarujemy \nprzed jej typem const\nPrzykład zastosowania: const int stala = 10;");
             Console.ReadKey();
         }
     }
