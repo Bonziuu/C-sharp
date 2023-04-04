@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0. Kurs 0", "Kurs 0\0. Kurs 0.csproj", "{94EAAB5B-748C-45F1-B128-091B545F602A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2. Operatory arytmetyczne i logiczne", "2. Operatory arytmetyczne i logiczne\2. Operatory arytmetyczne i logiczne.csproj", "{3C6D28E6-C0A2-465C-B419-740243B3163B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1. Typy zmiennych", "Typy zmiennych\1. Typy zmiennych.csproj", "{0B9E7116-74E0-48F6-8744-A59C980384E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0. Kurs 0", "0. Kurs 0\0. Kurs 0.csproj", "{5FAEA1DF-9C69-4E1B-96AE-176A30FF4096}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Operatory arytmetyczne i logiczne", "2. Operatory arytmetyczne i logiczne\2. Operatory arytmetyczne i logiczne.csproj", "{3C6D28E6-C0A2-465C-B419-740243B3163B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1. Typy zmiennych", "1. Typy zmiennych\1. Typy zmiennych.csproj", "{9B2A9AE6-A1EC-447B-AD13-51BC0012FFC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{94EAAB5B-748C-45F1-B128-091B545F602A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{94EAAB5B-748C-45F1-B128-091B545F602A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{94EAAB5B-748C-45F1-B128-091B545F602A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{94EAAB5B-748C-45F1-B128-091B545F602A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0B9E7116-74E0-48F6-8744-A59C980384E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0B9E7116-74E0-48F6-8744-A59C980384E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0B9E7116-74E0-48F6-8744-A59C980384E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0B9E7116-74E0-48F6-8744-A59C980384E0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3C6D28E6-C0A2-465C-B419-740243B3163B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3C6D28E6-C0A2-465C-B419-740243B3163B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C6D28E6-C0A2-465C-B419-740243B3163B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C6D28E6-C0A2-465C-B419-740243B3163B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FAEA1DF-9C69-4E1B-96AE-176A30FF4096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FAEA1DF-9C69-4E1B-96AE-176A30FF4096}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FAEA1DF-9C69-4E1B-96AE-176A30FF4096}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FAEA1DF-9C69-4E1B-96AE-176A30FF4096}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B2A9AE6-A1EC-447B-AD13-51BC0012FFC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B2A9AE6-A1EC-447B-AD13-51BC0012FFC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B2A9AE6-A1EC-447B-AD13-51BC0012FFC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B2A9AE6-A1EC-447B-AD13-51BC0012FFC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

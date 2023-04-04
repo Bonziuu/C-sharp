@@ -13,7 +13,9 @@ namespace Typy_zmiennych
             //Liczby całkowite
             int maxintiger = int.MaxValue;
             int minintiger = int.MinValue;
-            int sprawdzenie = maxintiger - minintiger;
+            int sprawdzenie;
+
+            sprawdzenie = maxintiger + minintiger;
 
             byte minbajt = byte.MinValue;
             byte maxbajt = byte.MaxValue;
