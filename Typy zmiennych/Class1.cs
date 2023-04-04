@@ -22,11 +22,26 @@ namespace Typy_zmiennych
             sbyte minsbajt = sbyte.MinValue;
             sbyte maxsbajt = sbyte.MaxValue;
 
+            long minlong = long.MinValue;
+            long maxlong = long.MaxValue;
+
+            uint maxuintiger = uint.MaxValue;
+            uint minuintiger = uint.MinValue;
+
             Console.WriteLine("Typy zmiennych\n");
             Console.WriteLine("Int\nLiczby całkowite\nZmienna typu int może przyjmować wartość od " + minintiger + " do " + maxintiger);
             Console.WriteLine("\nByte\nLiczby całkowite\nZmienna typu byte może przyjmować wartość od " + minbajt + " do " + maxbajt);
             Console.WriteLine("\nSbyte\nLiczby całkowite\nZmienna typu sbyte może przyjmować wartość od " + minsbajt + " do " + maxsbajt);
             Console.WriteLine("\nShort\nLiczby całkowite\nZmienna typu short może przyjmować wartość od " + minshort + " do " + maxshort);
+            Console.WriteLine("\nLong\nLiczby całkowite\nZmienna typu long może przyjmować wartość od " + minlong + " do " + maxlong);
+            Console.WriteLine("\nuint ushort ulong\nLiczby całkowite\nDodanie litery 'u' przed typami zmiennych powoduje podwojenie się zakresu przestrzeni liczb dodatnich \n(liczby ujemne zamieniane są na dodatnie) i może przyjmować wartość od " + minuintiger + " do " + maxuintiger + "\nSprawdzenie: maxintiger - minintiger =");
+            //Console.ReadLine(maxintiger - minintiger);
+
+            double maxdouble = double.MaxValue;
+            double mindouble = double.MinValue;
+
+            Console.WriteLine("\nDouble\nLiczby zmiennoprzecinkowe\nZmienna typu double może przyjmować wartości od " + mindouble + " do " + maxdouble);
+
             Console.ReadKey();
         }
     }
