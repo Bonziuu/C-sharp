@@ -19,5 +19,5 @@ Console.WriteLine("Przeładowanie metod i operatorów");
 Console.WriteLine("Extencion metody");
 Console.WriteLine("Podstawy programowania asynchronicznego async await");
 Console.WriteLine("Parametry funkcji out, ref");
-
+Console.WriteLine();
 Console.WriteLine("https://www.youtube.com/watch?v=nU2egLdGmzs&ab_channel=seesharpify");
