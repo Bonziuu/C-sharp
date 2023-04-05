@@ -53,6 +53,15 @@ namespace _4._Pętle
             }
             */
 
+            //Pętla DO WHILE - wykonuj dopóki
+            Console.WriteLine("Pętla do while \n\ndo\n{\n    Console.WriteLine(\"Pętla\");\n}\n\nRozwiązanie:\n");
+            do
+            {
+                Console.WriteLine("Pętla");
+            }
+            while (false);
+            Console.WriteLine("\nPowyższa pętla do while zawsze wykona się przynajmniej jeden raz zanim zostanie sprawdzony następnie warunek while\nnastępnie pętla jest kończona lub powtarzana w zależności od warunku while (true/false lub warunek matematyczny)");
+           
             Console.WriteLine();
             Console.ReadKey();
         }
