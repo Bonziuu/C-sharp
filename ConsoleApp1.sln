@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1. Typy zmiennych", "1. Typ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Instrukcje warunkowe", "3. Instrukcje warunkowe\3. Instrukcje warunkowe.csproj", "{D70BB189-BEB4-425B-A18F-3BE93BB63FAA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Pętle", "4. Pętle\4. Pętle.csproj", "{BB49C485-2218-433B-B3FC-EAA29C1290DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D70BB189-BEB4-425B-A18F-3BE93BB63FAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D70BB189-BEB4-425B-A18F-3BE93BB63FAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D70BB189-BEB4-425B-A18F-3BE93BB63FAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB49C485-2218-433B-B3FC-EAA29C1290DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB49C485-2218-433B-B3FC-EAA29C1290DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB49C485-2218-433B-B3FC-EAA29C1290DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB49C485-2218-433B-B3FC-EAA29C1290DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
