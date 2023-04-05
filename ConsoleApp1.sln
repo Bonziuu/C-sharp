@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0. Kurs 0", "0. Kurs 0\0. K
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1. Typy zmiennych", "1. Typy zmiennych\1. Typy zmiennych.csproj", "{9B2A9AE6-A1EC-447B-AD13-51BC0012FFC1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Instrukcje warunkowe", "3. Instrukcje warunkowe\3. Instrukcje warunkowe.csproj", "{D70BB189-BEB4-425B-A18F-3BE93BB63FAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{9B2A9AE6-A1EC-447B-AD13-51BC0012FFC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B2A9AE6-A1EC-447B-AD13-51BC0012FFC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B2A9AE6-A1EC-447B-AD13-51BC0012FFC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D70BB189-BEB4-425B-A18F-3BE93BB63FAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D70BB189-BEB4-425B-A18F-3BE93BB63FAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D70BB189-BEB4-425B-A18F-3BE93BB63FAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D70BB189-BEB4-425B-A18F-3BE93BB63FAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
