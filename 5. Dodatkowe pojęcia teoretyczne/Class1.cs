@@ -52,7 +52,7 @@ namespace _5._Dodatkowe_pojęcia_teoretyczne
             Console.WriteLine("Konwersja jawna to wymuszone przez programistę przekształcenie przez program zmiennej jednego typu na inny typ wraz z utratą częsci danych");
             Console.WriteLine("Rzutowanie zmiennych polega na nadpisaniu wartości zmiennej jednego typu np. int \nza wartość zmiennej drugiego typu np double. \n\nPrzykład:");
             Console.WriteLine("int i = 500000;\ndouble d = 35.348;\n\ni = (int)d;\n");
-            
+
             int i = 500000;
             double d = 35.348;
             Console.WriteLine("Wartość 'i' przed rzutowaniem zmiennej = " + i);
@@ -67,12 +67,29 @@ namespace _5._Dodatkowe_pojęcia_teoretyczne
             Console.WriteLine("Console.ReadLine(); - komenda która pozwala na wpisywanie znaków dla użytkownika\n");
             Console.WriteLine("Przykład użycia:\nstring s = Console.ReadLine();\nConsole.WriteLine(s);\n");
             Console.WriteLine("Rozwiązanie:\nProgram najpierw będzie chciał aby użytkownik coś wpisał, a po wpisaniu \ni naciśnięciu ENTER program wypisze to co użytkownik wpisał");
-            
+
             //Console.ReadLine();
-            
+
             //string s = Console.ReadLine();
             //Console.WriteLine(s);
-            
+
+            Console.WriteLine("\n\nConsole.ReadKey(); - komenda, która wymaga naciśnięcia klawisza przez użytkownika\n");
+            Console.WriteLine("Przykład użycia:\nif (Console.ReadKey().Key == ConsoleKey.D2)\n{\n     Console.WriteLine(\"PRAWDA\");\n}\nelse\n{\n     Console.WriteLine(\"FAŁSZ\")\n}\n");
+            Console.WriteLine("Rozwiązanie:\nJeżeli użytkownik wciśnie przycisk '2' na klawiaturze to wypisz PRAWDA, \na jeśli wciśnie inny przycisk to wypisz FAŁSZ");
+
+            //if (Console.ReadKey().Key == ConsoleKey.D2)
+            //{
+            //    Console.WriteLine("\nPRAWDA");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("\nFAŁSZ");
+            //}
+
+            //Konwersja typów
+            Console.WriteLine("\n---------------------------------------------------------------------------------------------------------");
+            Console.WriteLine("Konwersja typów\n");
+
             Console.ReadKey();
         }
     }
