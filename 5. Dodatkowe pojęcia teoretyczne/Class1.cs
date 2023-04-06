@@ -86,9 +86,32 @@ namespace _5._Dodatkowe_pojęcia_teoretyczne
             //    Console.WriteLine("\nFAŁSZ");
             //}
 
-            //Konwersja typów
+            //Konwersja typów (string ---> int, int ---> string)
             Console.WriteLine("\n---------------------------------------------------------------------------------------------------------");
-            Console.WriteLine("Konwersja typów\n");
+            Console.WriteLine("Konwersja typów (string ---> int i int ---> string)\n");
+            Console.WriteLine("String ---> int");
+            Console.WriteLine("Aby przekonwertować typ zmiennej tekstowej string na liczbową int używamy komendy Parse lub TryParse np:\n\nstring s = Console.ReadLine();\nint j = int.Parse(s) + 10;\nConsole.WriteLine(\"Rozwiązanie: \" + j)\n");
+            Console.WriteLine("Powyższy kod pobierze od użytkownika wartośc typu string, \na następnie przekonwertuje ją na typ zmiennej int i do wartości doda liczbę 10.\nW ostatnim kroku wypisze rozwiązanie.\n");
+
+            //Zamiana string ---> int ---> string 
+            //string ---> int
+            //Console.WriteLine("Wpisz liczbę:\n");
+            //string s = Console.ReadLine();
+            //int j = int.Parse(s) + 10;
+            //Console.WriteLine("Rozwiązanie: " + j);
+
+            ////int ---> string
+            //s = j.ToString();
+            //Console.WriteLine(j);
+
+            Console.WriteLine("String ---> int");
+            Console.WriteLine("Aby przekonwertować typ zmiennej liczbowej int na tekstową string używamy komendy ToString np:\n\nint a = 10;\nstring b;\nb = a.ToString();\nConsole.WriteLine(b);\n");
+            Console.WriteLine("Powyższy kod deklaruje zmienną typu int równą 10 oraz zmienną b typu string, \na następnie konwertuje typ zmiennej int na string. W ostatnim kroku wypisze rozwiązanie.\n");
+            //Zamiania int ---> string
+            //int a = 10;
+            //string b;
+            //b = a.ToString();
+            //Console.WriteLine(b);
 
             Console.ReadKey();
         }
