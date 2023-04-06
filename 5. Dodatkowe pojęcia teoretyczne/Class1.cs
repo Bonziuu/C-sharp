@@ -31,9 +31,21 @@ namespace _5._Dodatkowe_pojęcia_teoretyczne
             Console.WriteLine("Skróty klawiszowe i snippety\n");
             Console.WriteLine("Skróty klawiszowe:");
             Console.WriteLine("CTRL + S - zapisywanie programu");
+            Console.WriteLine("CTRL + Z - poprzedni krok");
+            Console.WriteLine("CTRL + Y - następny krok");
             Console.WriteLine("CTRL + K, a następnie CTRL + D - ustawienie linii kodu do pozycji (za dużo spacji itp)");
             Console.WriteLine("CTRL + K, a następnie CTRL + C - zamiana zaznaczonego kodu w komentarz");
-            Console.WriteLine("CTRL + K, a następnie CTRL + U - przywrócenie zaznaczonego komentarza w kod");
+            Console.WriteLine("CTRL + K, a następnie CTRL + U - przywrócenie zaznaczonego komentarza w kod\n");
+            Console.WriteLine("Snippety: (po wpisaniu skrótu kodowego i naciśnięciu 2x TAB wpisze się cała linia kodu)");
+            Console.WriteLine("cw - Console.WriteLine()");
+            Console.WriteLine("for - utworzenie przykładowej pętli for\ninne pętle");
+
+            //for (int i = 0; i < length; i++)
+            //{
+
+            //}
+
+            Console.WriteLine("\n---------------------------------------------------------------------------------------------------------");
 
 
             Console.ReadKey();
