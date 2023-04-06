@@ -45,9 +45,18 @@ namespace _5._Dodatkowe_pojęcia_teoretyczne
 
             //}
 
+            //Rzutowanie zmiennych
             Console.WriteLine("\n---------------------------------------------------------------------------------------------------------");
-
-
+            Console.WriteLine("Rzutowanie zmiennych\n");
+            Console.WriteLine("Rzutowanie zmiennych polega na nadpisaniu wartości zmiennej jednego typu np. int \nza wartość zmiennej drugiego typu np double. \n\nPrzykład:");
+            Console.WriteLine("int i = 500000;\ndouble d = 35.348;\n\ni = (int)d;\n");
+            
+            int i = 500000;
+            double d = 35.348;
+            Console.WriteLine("Wartość 'i' przed rzutowaniem zmiennej = " + i);
+            i = (int)d;
+            Console.WriteLine("Wartość 'i' po rzutowaniu zmiennej = " + i);
+            Console.WriteLine("W tym przypadki rzutowanie spowodowało przekształcenie wartości zmiennej double na int, \nczyli liczby zmiennoprzecinkowej na całkowitą");
             Console.ReadKey();
         }
     }
