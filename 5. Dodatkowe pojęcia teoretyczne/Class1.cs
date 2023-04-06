@@ -47,7 +47,9 @@ namespace _5._Dodatkowe_pojęcia_teoretyczne
 
             //Rzutowanie zmiennych
             Console.WriteLine("\n---------------------------------------------------------------------------------------------------------");
-            Console.WriteLine("Rzutowanie zmiennych\n");
+            Console.WriteLine("Rzutowanie zmiennych - konwersja jawna i niejawna\n");
+            Console.WriteLine("Konwersja niejawna to automatyczne przekształcenie przez program zmiennej jednego typu na inny typ bez utraty danych");
+            Console.WriteLine("Konwersja jawna to wymuszone przez programistę przekształcenie przez program zmiennej jednego typu na inny typ wraz z utratą częsci danych");
             Console.WriteLine("Rzutowanie zmiennych polega na nadpisaniu wartości zmiennej jednego typu np. int \nza wartość zmiennej drugiego typu np double. \n\nPrzykład:");
             Console.WriteLine("int i = 500000;\ndouble d = 35.348;\n\ni = (int)d;\n");
             
@@ -56,7 +58,21 @@ namespace _5._Dodatkowe_pojęcia_teoretyczne
             Console.WriteLine("Wartość 'i' przed rzutowaniem zmiennej = " + i);
             i = (int)d;
             Console.WriteLine("Wartość 'i' po rzutowaniu zmiennej = " + i);
-            Console.WriteLine("W tym przypadki rzutowanie spowodowało przekształcenie wartości zmiennej double na int, \nczyli liczby zmiennoprzecinkowej na całkowitą");
+            Console.WriteLine("W tym przypadki rzutowanie spowodowało przekształcenie wartości zmiennej double na int, \nczyli liczby zmiennoprzecinkowej na całkowitą\n");
+            Console.WriteLine("Jest to przykład konwersji jawnej");
+
+            //Wczytywanie danych z konsoli
+            Console.WriteLine("\n---------------------------------------------------------------------------------------------------------");
+            Console.WriteLine("Wczytywanie danych z konsoli\n");
+            Console.WriteLine("Console.ReadLine(); - komenda która pozwala na wpisywanie znaków dla użytkownika\n");
+            Console.WriteLine("Przykład użycia:\nstring s = Console.ReadLine();\nConsole.WriteLine(s);\n");
+            Console.WriteLine("Rozwiązanie:\nProgram najpierw będzie chciał aby użytkownik coś wpisał, a po wpisaniu \ni naciśnięciu ENTER program wypisze to co użytkownik wpisał");
+            
+            //Console.ReadLine();
+            
+            //string s = Console.ReadLine();
+            //Console.WriteLine(s);
+            
             Console.ReadKey();
         }
     }
