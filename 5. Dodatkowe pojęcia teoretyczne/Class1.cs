@@ -112,6 +112,15 @@ namespace _5._Dodatkowe_pojęcia_teoretyczne
             //string b;
             //b = a.ToString();
             //Console.WriteLine(b);
+            
+            //Modyfikacja konsoli
+            Console.BackgroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.WriteLine("\n---------------------------------------------------------------------------------------------------------");
+            Console.WriteLine("Modyfikacja konsoli\n");
+            Console.WriteLine("Aby zmodyfikować konsolę poleceń przydatne będzie kilka komend:");
+            Console.WriteLine("Console.BackgroundColor = ConsoleColor.Green; - zmienia barwę tła konsoli na zielony");
+            Console.WriteLine("Console.ForegroundColor = ConsoleColor.Black; - zmienia barwę tekstu w konsoli na czarny");
 
             Console.ReadKey();
         }
