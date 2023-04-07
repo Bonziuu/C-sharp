@@ -39,8 +39,22 @@ namespace _6._Instrukcje_skoku
             //Dopóki wartość jest prawdziwa to wykonaj pętlę jeżeli, w której jeśli a będzie większe od 10 to przerwij całą pętlę
             //Cały kod w pętli po komendzie break nie zostanie nigdy wykonany
 
-            Console.WriteLine("----------------------------------------------------------");
-            Console.WriteLine("\n");
+            //Continue - kontynuuj, przydaje się gdy jest pętla w pętli i komenda ta powtórzy całą pętlę i ominie kroki po tej komendzie (nie wykonają się w bieżącej pętli 
+            Console.WriteLine("\n----------------------------------------------------------");
+            Console.WriteLine("Continue - kontynuuj, przydaje się gdy jest pętla w pętli i komenda ta powtórzy całą pętlę \ni ominie kroki po tej komendzie (nie wykonają się w bieżącej pętli)\n");
+            Console.WriteLine("Przykład użycia (wypisanie liczb parzystych do 10):\n\nfor (int i = 0; i < 10; i++)\n{\n    if (i % 2 == 1)\n    {\n        continue;\n    }\n    Console.WriteLine(i);\n}\n");
+            Console.WriteLine("Rozwiązanie:\n");
+
+            for (int i = 0; i < 10; i++)
+            {
+                if (i % 2 == 1)
+                {
+                    continue;
+                }
+                Console.WriteLine(i);
+            }
+            //Dla wartości i od 0 do 9 jeśli reszta z dzielenia przez 2 wyniesie 1 to kontynuuj czyli wróć do początku pętli, a jeśli nie wyniesie 1 to wykonaj kolejne kroki bieżącej pętli
+            Console.WriteLine("\nDla wartości i od 0 do 9 jeśli reszta z dzielenia przez 2 wyniesie 1 to kontynuuj czyli wróć do początku pętli, \na jeśli nie wyniesie 1 to wykonaj kolejne kroki bieżącej pętli");
             Console.ReadKey();
         }
     }
