@@ -30,7 +30,7 @@ namespace _6._Instrukcje_skoku
                     Console.WriteLine("Pętla przerwana");
                     break;
                     Console.WriteLine("hehe");
-                    Console.WriteLine(a); 
+                    Console.WriteLine(a);
                 }
                 Console.WriteLine(a);
                 a++;
@@ -55,6 +55,30 @@ namespace _6._Instrukcje_skoku
             }
             //Dla wartości i od 0 do 9 jeśli reszta z dzielenia przez 2 wyniesie 1 to kontynuuj czyli wróć do początku pętli, a jeśli nie wyniesie 1 to wykonaj kolejne kroki bieżącej pętli
             Console.WriteLine("\nDla wartości i od 0 do 9 jeśli reszta z dzielenia przez 2 wyniesie 1 to kontynuuj czyli wróć do początku pętli, \na jeśli nie wyniesie 1 to wykonaj kolejne kroki bieżącej pętli");
+
+            //Goto - przejdz do, najpierw trzeba stworzyć etykietę kodu a potem za jej pomocą przejść do wykonywania programu w miejsce tej etykiety 
+            Console.WriteLine("\n----------------------------------------------------------");
+            Console.WriteLine("Goto - przejdz do, najpierw trzeba stworzyć etykietę kodu a potem za jej pomocą przejść \ndo wykonywania programu w miejsce tej etykiety");
+            Console.WriteLine("\nEtykietę tworzy się poprzez nazwę etykiety oraz dodania dwukropka np: \n\netykieta1:\nkod etykiety");
+            Console.WriteLine("\nNastępnie aby przejść za pomocą komendy goto do wybranego miejsca należy wpisac goto i nazwę etykiety np:\n\ngoto etykieta1;\n");
+            Console.WriteLine("Przykład zastosowania:\n");
+            Console.WriteLine("goto dwa;\njeden:\nConsole.WriteLine(\"Jeden\")\ndwa:\nConsole.WriteLine(\"Dwa\")\ntrzy:\nConsole.WriteLine(\"Trzy\")\n");
+            Console.WriteLine("Rozwiązanie:\n");
+
+            goto dwa;
+
+            jeden:
+            Console.WriteLine("Jeden");
+
+            dwa:
+            Console.WriteLine("Dwa");
+
+            trzy:
+            Console.WriteLine("Trzy");
+
+            //Komenda goto pozwoliła przejśc od razu do miejsca kodu etykiety dwa: przez co pominęła wykonywanie kodu etykiety jeden:
+
+
             Console.ReadKey();
         }
     }
