@@ -10,8 +10,17 @@ namespace _5._1._Praktyka
     {
         static void Main(string[] args)
         {
+            
+            //Zamiana czarnego koloru konsoli na czerwony
+            if (Console.BackgroundColor == ConsoleColor.Black)
+            {
+                Console.BackgroundColor = ConsoleColor.Red;
+                Console.ForegroundColor = ConsoleColor.Black;
+                Console.Clear();
+            }
+
             //Zadanie : Wyświetl  prostokąt złożony z '*' o wysokości Y i szerokości X, które wprowadzane są przez użytkownika
-            Console.Write("Wpisz długość X = ");
+                Console.Write("Wpisz długość X = ");
             string x1 = Console.ReadLine();
             int x = int.Parse(x1);
             
