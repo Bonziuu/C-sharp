@@ -22,24 +22,40 @@ namespace _5._2._1._Zadanie_2._Rozwiązanie_1
             Console.WriteLine("Komputer wygenerował pewną liczbę w przedziale 1-10, zgadnij jaką!");
             Console.WriteLine("Wpisz liczbę, którą podejrzewasz że komputer wylosował: ");
             int b;
+            int c = 0;
             
             do
             {
                 b = int.Parse(Console.ReadLine());
-
-                if (b < a)
+                
+                if (b > 10 || b < 1)
                 {
-                    Console.WriteLine("Liczba wygenerowana przez komputer jest większa");
-                    Console.WriteLine("Wpisz kolejną liczbę:");
-                }
-                else if (b > a)
-                {
-                    Console.WriteLine("Liczba wygenerowana przez komputer jest mniejsza");
-                    Console.WriteLine("Wpisz kolejną liczbę:");
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("\nPodałeś liczbę spoza zakresu 1-10!!!\nPodaj prawidłową liczbę!:");
+                    Console.ResetColor();
                 }
                 else
                 {
-                    Console.WriteLine("Gratulacje! Odgadłeś liczbę!");
+
+                    //c++ oznacza ile razy wykonała się pętla zanim zgadliśmy równanie
+                    c++;
+                    if (b < a)
+                    {
+                        Console.WriteLine("Liczba wygenerowana przez komputer jest większa");
+                        Console.WriteLine("Wpisz kolejną liczbę:");
+                    }
+                    else if (b > a)
+                    {
+                        Console.WriteLine("Liczba wygenerowana przez komputer jest mniejsza");
+                        Console.WriteLine("Wpisz kolejną liczbę:");
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("Gratulacje! Odgadłeś liczbę!");
+                        Console.WriteLine("Udało ci się odpowiedzieć właściwie za " + c + " razem!");
+                        Console.ResetColor();
+                    }
                 }
             }
             while (b != a);
