@@ -31,33 +31,54 @@ namespace _5._1._Praktyka
             int a = 0;
             int b = 0;
             int c = 0;
+            int d = 0;
             
             Console.WriteLine("\nProstokąt:\n");
             Console.WriteLine("");
 
-            while (a < x)
+            for (int i = 0; i < y; i++)
             {
-                Console.Write("*");
-                a++;
+                for (int j = 0; j < x; j++)
+                {
+                    Console.Write("*");
+                }
+
+                Console.WriteLine("");
             }
 
-            Console.WriteLine();
+            // Dla liczby równej 0, mniejszej od Y (wprowadzonej przez użytkownika) i co pętlę dodawaną o 1
+            // jest robiona pętla, która za każdym razem będzie wykonywała się od 0 do x, a po każdej mniejszej pętli robiona jest komenda WRITELINE
 
-            while (b < (y-2))
-            {
-                Console.WriteLine("*");
-                b++;
-            }
+            //while (a < x)
+            //{
+            //    Console.Write("*");
+            //    a++;
+            //}
 
-            while (c < x)
-            {
-                Console.Write("*");
-                c++;
-            }
+            //Console.WriteLine();
+
+            //while (b < (y-2))
+            //{
+            //    Console.WriteLine("*");
+                
+            //    while (d < (x-2))
+            //    {
+            //        Console.Write("_");
+            //        d++;
+            //    }
+            //    b++;
+                
+            //}
+
+            //while (c < x)
+            //{
+            //    Console.Write("*");
+            //    c++;
+            //}
 
             Console.WriteLine("\n\nPole prostokąta: " + (x*y));
 
-            Console.ReadKey();
+            //Console.ReadKey();
         }
     }
 }
