@@ -11,7 +11,7 @@ namespace _7._Instrukcje_Switch
         static void Main(string[] args)
         {
 
-
+            Console.WriteLine("Taktyczny upload");
             Console.ReadKey();
         }
     }
