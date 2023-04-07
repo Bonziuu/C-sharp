@@ -77,6 +77,7 @@ namespace _6._Instrukcje_skoku
             Console.WriteLine("Trzy");
 
             //Komenda goto pozwoliła przejśc od razu do miejsca kodu etykiety dwa: przez co pominęła wykonywanie kodu etykiety jeden:
+            //Podobno komenda goto jest mało używana przez programistów
 
 
             Console.ReadKey();
