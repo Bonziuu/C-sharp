@@ -10,6 +10,7 @@ namespace _5._1._Praktyka
     {
         static void Main(string[] args)
         {
+            //Zadanie : Wyświetl  prostokąt złożony z '*' o wysokości Y i szerokości X, które wprowadzane są przez użytkownika
             Console.Write("Wpisz długość X = ");
             string x1 = Console.ReadLine();
             int x = int.Parse(x1);
@@ -18,12 +19,34 @@ namespace _5._1._Praktyka
             string y1 = Console.ReadLine();
             int y = int.Parse(y1);
 
+            int a = 0;
+            int b = 0;
+            int c = 0;
+            
+            Console.WriteLine("\nProstokąt:\n");
+            Console.WriteLine("");
 
-            //if ()
-            //{
+            while (a < x)
+            {
+                Console.Write("*");
+                a++;
+            }
 
-            //}
+            Console.WriteLine();
 
+            while (b < (y-2))
+            {
+                Console.WriteLine("*");
+                b++;
+            }
+
+            while (c < x)
+            {
+                Console.Write("*");
+                c++;
+            }
+
+            Console.WriteLine("\n\nPole prostokąta: " + (x*y));
 
             Console.ReadKey();
         }
