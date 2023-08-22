@@ -55,7 +55,7 @@ namespace _8.Tablice
                 "natomiast 'Console.WriteLine(tablica.GetLenght(1));' byłoby już '3', \n" +
                 "a kolejne wartości zczytują kolejne wymiary tablic.\n");
 
-            Console.WriteLine("\nPrzykład wypisania wszystkich wyrazów w tablicy dwuwymiarowej:\n");
+            Console.WriteLine("\nPrzykład wypisania wszystkich wyrazów w tablicy dwuwymiarowej:");
             Console.WriteLine("\nint[,] tablica = new int[2, 3];\ntablica[0, 0] = 1;\r\ntablica[0, 1] = 2;\r\ntablica[0, 2] = 3;\r\ntablica[1, 0] = 4;\r\ntablica[1, 1] = 5;\r\ntablica[1, 2] = 6;");
             Console.WriteLine("\nfor (int i = 0; i < tablica.GetLength(0); i++)\r\n{\r\n    for (int j = 0; j < tablica.GetLength(1); j++)\r\n    {\r\n        Console.Write(tablica[i, j] + \" \");\r\n    }\n    Console.WriteLine();\r\n}");
             Console.WriteLine("\nWynik:\n");
@@ -77,9 +77,42 @@ namespace _8.Tablice
                 Console.WriteLine();
             }
 
-            Console.WriteLine("W praktyce bardzo rzadko stosuje się tablice trójwymiarowe, które robi się analogicznie do tych dwuwymiarowych \noraz prawie w ogóle nie wykorzystuje się już tablic więcejwymiarowych.");
+            Console.WriteLine("\nW praktyce bardzo rzadko stosuje się tablice trójwymiarowe, które robi się analogicznie do tych dwuwymiarowych \noraz prawie w ogóle nie wykorzystuje się już tablic więcejwymiarowych.");
             
-            Console.WriteLine("\n\n--------------------------------------\nTablice tablic\n\n");
+            Console.WriteLine("\n\n--------------------------------------\nTablice tablic\n\n" +
+                "Tablice tablic, znane również jako tablice wielowymiarowe nieregularne lub jagged arrays\n" +
+                "umożliwiają tworzenie nieregularnych i zagnieżdżonych struktur danych, \n" +
+                "gdzie każda wewnętrzna tablica może mieć różny rozmiar.\n\nDeklaracja:\n\n" +
+                "int[][] tabliceTablic = new int [3][];");
+            Console.WriteLine("tabliceTablic[0] = new int[] { 1, 2, 3 };\r\ntabliceTablic[1] = new int[] { 4, 5 };\r\ntabliceTablic[2] = new int[] { 6, 7, 8, 9 };\n\n" +
+                "Dostęp do elementów tablic tablic:\n\nint wartość = tabliceTablic[0][1]; // wartość = 2\n");
+
+            Console.WriteLine("Dla tablicy tablic metoda '.GetLenght' wyświetli tylko dobrą pierwszą długość, \n" +
+                "czyli 'tabliceTablic.GetLenght(0)' wyświetli '3', \nwięc zamiast niej w pętli ZEWNĘTRZNEJ można skorzystać po prostu z metody '.Lenght',\n" +
+                "natomiast w pętli zewnętrznej warunkiem będzie jakaś zmienna mniejsza od tabliceTablic[i].Lenght, \ngdzie i jest zmienną pętli zewnętrznej, " +
+                "czyli np: 'j < tabliceTablic[i].Lenght'\n");
+
+            Console.WriteLine("Przykład wypisania wszystkich wyrazów tablicy tablic o różnych rozmiarach:\n\n" +
+                "int[][] tabliceTablic = new int[3][];\r\ntabliceTablic[0] = new int[] { 1,2,3 };\r\ntabliceTablic[1] = new int[] { 4,5 };\r\ntabliceTablic[2] = new int[] { 6,7,8,9 };\r\n\r\nfor (int i = 0; i < tabliceTablic.Length; i++)\r\n{\r\n    " +
+                "for (int j = 0; j < tabliceTablic[i].Length; j++)\r\n    {\r\n        Console.Write(tabliceTablic[i][j] + \" \");\r\n    }\r\n    Console.WriteLine();\r\n}\n\nWynik:\n");
+
+            int[][] tabliceTablic = new int[3][];
+            tabliceTablic[0] = new int[] { 1,2,3 };
+            tabliceTablic[1] = new int[] { 4,5 };
+            tabliceTablic[2] = new int[] { 6,7,8,9 };
+
+            for (int i = 0; i < tabliceTablic.Length; i++)
+            {
+                for (int j = 0; j < tabliceTablic[i].Length; j++)
+                {
+                    Console.Write(tabliceTablic[i][j] + " ");
+                }
+                Console.WriteLine();
+            }
+
+            Console.WriteLine("\nW kontekście programowania słowo 'Array' to tablica \ni za pomocą tej komendy można łatwo zastosować metody przypisane do tablic jak np sortowanie:\n" +
+                "Array.Sort(tablica);\npo wpisaniu słowa 'Array.' wyświetlą się różne metody działan na tablicach.");
+
             Console.ReadKey();
         }
     }
