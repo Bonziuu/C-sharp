@@ -12,11 +12,32 @@ namespace _9.Funkcje_i_metody
     {
         static void Main(string[] args)
         {
+            int[] tab = new int[3];
+            tab[0] = 1;
+            tab[1] = 2;
+            tab[2] = 3;
+            int a = 5;
+            //Console.WriteLine($"Tablica przed wywołaniem funkcji:{tab[0]}, {tab[1]}, {tab[2]}.");
+            //Tablica(tab);
+            //Console.WriteLine($"Tablica po wywołaniu funkcji:{tab[0]}, {tab[1]}, {tab[2]}.");
+
+            //Zmienna(ref a);
+            //Console.WriteLine(a);
+
+            //ZmiennaOut(out a);
+            //Console.WriteLine(a);
+
             Tekst();
+            
             Przeciazanie();
+            
             //Funkcja(2,1);
             //Funkcja(3,8,5);
+            
             Void();
+            
+            Referencje();
+            Referencje2();
             Console.ReadKey();
         }
 
@@ -54,6 +75,23 @@ namespace _9.Funkcje_i_metody
                 return "wynik większy od 10";
             }
         }
+        static void Zmienna(ref int b)
+        {
+            b += 5;
+        }
+
+        static void ZmiennaOut(out int b)
+        {
+            b = 5;
+            b += 5;
+        }
+        static void Tablica(int[] tab)
+        {
+            tab[0] = 8;
+            tab[1] = 9;
+            tab[2] = 10;
+        }
+
         static void Tekst()
         {
             Console.WriteLine("--------------------------------------\nFunkcje i metody\n--------------------------------------");
@@ -100,7 +138,51 @@ namespace _9.Funkcje_i_metody
                 "i jeśli zostanie to tak zadeklarowane to zawsze trzeba zwrócić jakąś wartość za pomocą 'return'.\n\n" +
                 "Przykład:\nstatic int Funkcja2(int a, int b)\r\n{\r\n    int wynik = a + b;\r\n    return wynik;\r\n}\n\nlub\n\n" +
                 "static string Funkcja3(int a, int b)\r\n{\r\n    int wynik = a + b;\r\n    if(wynik > 10)\r\n    {" +
-                "\r\n        return \"wynik mniejszy od 10\";\r\n    }\r\n    else\r\n    {\r\n        return \"wynik większy od 10\";\r\n    }\r\n}");
+                "\r\n        return \"wynik mniejszy od 10\";\r\n    }\r\n    else\r\n    {\r\n        return \"wynik większy od 10\";\r\n    }\r\n}\n");
+        }
+
+        static void Referencje()
+        {
+            Console.WriteLine("--------------------------------------\nReferencje\n");
+            Console.WriteLine("Jeśli mamy w jednej metodzie zadeklarowaną zmienną np 'a' która równa się 5 (int a = 5),\n" +
+                "i wyślemy ją innej metody, w której przeprowadzona jest jakaś operacja na tej zmiennej 'a' \n" +
+                "to w tej pierwszej metodzie 'a' nigdy się nie zmienia i to nawet po wywołaniu funkcji.\n\n" +
+                "Jeśli chcemy, aby ta zmienna zmieniła swoją wartość po wywołaniu metody \n" +
+                "musimy dodac słowko 'ref' przed deklaracją danej zmiennej\n\n" +
+                "Przykład:\nstatic void Main(string[] args)\r\n{\r\n    int a = 5;\r\n    Zmienna(ref a);\r\n}\r\nstatic void Zmienna(ref int a)\r\n{\r\n    a += 5;\r\n}\n" +
+                "W tym przykładzie w metodzie 'Main' przed wywołaniem metody 'Zmienna' \n" +
+                "to 'a' równa się 5 a po wywołaniu metody a równa się 10. \n" +
+                "Bez wypisania referencji 'ref' zmienna 'a' w mainie cały czas równałaby się 5.\n\n");
+            Console.WriteLine("Jeśli chcemy przypisać wartość jakiejś zmiennej w pierwszej metodzie za pomocą metody drugiej, \n" +
+                "czyli kiedy nie wiemy z góry jaką wartość przypisać do zmiennej \n" +
+                "i właśnie ta druga funkcja nam zadeklaruje tą liczbę to używamy słowa 'out'.\n\n" +
+                "Przykład: \nstatic void Main(string[] args)\r\n{\r\n    int a;\r\n    Zmienna(out a);\r\n}\r\nstatic void Zmienna(out int b)\r\n{\r\n    b = 5;\r\n}\n" +
+                "Nazwa zmiennej w metodzie drugiej, czyli 'b' może różnić się od wysłanej nazwy zmiennej z metody Main, czyli 'a', \n" +
+                "ponieważ 'b' jest tylko nazwą zmiennej lokalnej wewnątrz funkcji, a prawidłową nazwę zmiennej \n" +
+                "wysłaliśmy za pomocą 'Zmienna(out a);'");
+        }
+        static void Referencje2()
+        {
+            Console.WriteLine("--------------------------------------\nReferencje złożone\n");
+            Console.WriteLine("W przypadku zmiennych zastosowanie 'ref' w argumencie innej metody pozwala nadpisać zmienną główną w metodzie pierwszej,\n" +
+                "natomiast inaczej jest już w przypadku np. tablic, w których język został stworzony w taki sposób,\n" +
+                "aby tablice nadpisywały sie od razu bez dopisywania 'ref' do argumentu.\n\nPrzykład:\n" +
+                "    static void Tablica(int[] tab)\r\n        {\r\n            tab[0] = 8;\r\n            tab[1] = 9;\r\n            tab[2] = 10;\r\n        }" +
+                "\n    static void Main(string[] args)\r\n        {\r\n            int[] tab = new int[3];\r\n            tab[0] = 1;\r\n            tab[1] = 2;\r\n            tab[2] = 3;\r\n            Console.WriteLine($\"Tablica przed wywołaniem funkcji:{tab[0]}, {tab[1]}, {tab[2]}.\");\r\n            Tablica(tab);\r\n            Console.WriteLine($\"Tablica po wywołaniu funkcji:{tab[0]}, {tab[1]}, {tab[2]}.\");\r\n        }\n" +
+                "    Tablica przed wywołaniem funkcji: 1, 2, 3.\n" +
+                "    Tablica po wywołaniu funkcji: 8, 9, 10.\n");
+            Console.WriteLine("Inaczej będzie natomiast w przypadku kiedy utworzymy sobie nową tablicę w drugiej metodzie" +
+                "\n\nPrzykład:\n" +
+                "    static void Tablica(int[] tab)\r\n        {\r\n            tab = new int[3];\r\n            tab[0] = 8;\r\n            tab[1] = 9;\r\n            tab[2] = 10;\r\n        }" +
+                "\n    static void Main(string[] args)\r\n        {\r\n            int[] tab = new int[3];\r\n            tab[0] = 1;\r\n            tab[1] = 2;\r\n            tab[2] = 3;\r\n            Console.WriteLine($\"Tablica przed wywołaniem funkcji:{tab[0]}, {tab[1]}, {tab[2]}.\");\r\n            Tablica(tab);\r\n            Console.WriteLine($\"Tablica po wywołaniu funkcji:{tab[0]}, {tab[1]}, {tab[2]}.\");\r\n        }\n" +
+                "    Tablica przed wywołaniem funkcji: 1, 2, 3.\n" +
+                "    Tablica po wywołaniu funkcji: 1, 2, 3.\n");
+            Console.WriteLine("Tutaj pierwotna tablica nie zmieniła wartości swoich danych, \n" +
+                "ponieważ 'static void Tablica(int[] tab)' dokładnie w argumencie 'int[] tab' nie kopiuje całej tablicy, \n" +
+                "jak to było w przypadku zmiennych które były kopiowane, lecz argument zachowuje jedynie adres do prawdziwej tablicy. \n" +
+                "W momencie pisania 'tab = new int[3];' w metodzie 'Tablica' przechowywany adres jest nadpisywany przez nową tablicę, \n" +
+                "która jest zawarta jedynie lokalnie w obrębie danej metody \n" +
+                "i właśnie dlatego tablica w pierwszej metodzie nie jest nadpisana.");
         }
     }
 }
