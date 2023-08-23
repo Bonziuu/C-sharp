@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7. Instrukcje Switch", "7. 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8. Tablice", "8. Tablice\8. Tablice.csproj", "{29BBB93A-6FB0-4A23-8078-021D6006B74B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9. Funkcje i metody", "9. Funkcje i metody\9. Funkcje i metody.csproj", "{89ACEC31-A824-4EB8-AA4D-77977FBCE44B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{29BBB93A-6FB0-4A23-8078-021D6006B74B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29BBB93A-6FB0-4A23-8078-021D6006B74B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29BBB93A-6FB0-4A23-8078-021D6006B74B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89ACEC31-A824-4EB8-AA4D-77977FBCE44B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89ACEC31-A824-4EB8-AA4D-77977FBCE44B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89ACEC31-A824-4EB8-AA4D-77977FBCE44B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89ACEC31-A824-4EB8-AA4D-77977FBCE44B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
