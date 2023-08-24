@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8. Tablice", "8. Tablice\8.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9. Funkcje i metody", "9. Funkcje i metody\9. Funkcje i metody.csproj", "{89ACEC31-A824-4EB8-AA4D-77977FBCE44B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "a10. Klasy i obiekty", "a10. Klasy i obiekty\a10. Klasy i obiekty.csproj", "{248BAE0E-5859-4238-9993-0B05786A0765}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{89ACEC31-A824-4EB8-AA4D-77977FBCE44B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89ACEC31-A824-4EB8-AA4D-77977FBCE44B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89ACEC31-A824-4EB8-AA4D-77977FBCE44B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{248BAE0E-5859-4238-9993-0B05786A0765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{248BAE0E-5859-4238-9993-0B05786A0765}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{248BAE0E-5859-4238-9993-0B05786A0765}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{248BAE0E-5859-4238-9993-0B05786A0765}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
